@@ -1,0 +1,23 @@
+<%- include('../partials/html_header.ejs') %>
+<div class="row">
+  <div class="col-md-12">
+    <h1><%= message %></h1>
+    <table class="table">
+      <thead>
+        <tr>
+          <th>id</th>
+          <th>name</th>
+        </tr>
+      </thead>
+      <tbody>
+        <% users.forEach((user) => { %>
+        <tr>
+          <td><%= user.id %></td>
+          <td><%= user.name %></td>
+        </tr>
+        <% }) %>
+      </tbody>
+    </table>
+  </div>
+</div>
+<%- include('../partials/html_footer.ejs') %>

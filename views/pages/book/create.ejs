@@ -1,0 +1,9 @@
+<%- include('../../partials/html_header.ejs') %>
+<div class="container-fluid px-4">
+  <h2><%= pageTitle %></h2>
+  <%- include('../../partials/alert.ejs') %>
+  <form method="post" action="/books" enctype="multipart/form-data">
+    <%- include('./partial/form.ejs') %>
+  </form>
+</div>
+<%- include('../../partials/html_footer.ejs') %>
